@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(
+    40deg,rgb(103, 230, 77) 40%,
+    rgb(208, 255, 0) 40%
+    
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appMain {
+  min-width: 200px;
+  max-width: 60vw;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: 0.5s;
+}
+
+.appMain:hover {
+  transform: scale(0.95);
+}
+
+.appMain > * {
+  margin-bottom: 1rem;
+}
+
+.input {
+  border: 1.5px solid white;
+  outline: none;
+  padding: 0.6rem 1rem;
+  min-width: 100px;
+  max-width: 100%;
+
+  border-radius: 0.5rem;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: black;
+  font-family: 'Courgette', cursive;
+
+}
+
+.input:focus {
+  background: white;
+  border: 2px solid white;
+  transform: translateY(-7px);
+}
+
+.appBody {
+  background: rgba(255, 255, 255, 0.3);
+
+  border-radius: 0.5rem;
+  font-family: 'Courgette', cursive;
+
+  padding: 1rem;
+}
+
+.locationData {
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.weatherStatus {
+  line-height: 2rem;
+}
+
+.temp {
+  font-size: 3rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.weather {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.img {
+  background: white;
+  border-radius: 0.8rem;
+}
